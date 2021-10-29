@@ -1,6 +1,6 @@
 FROM golang:alpine as build
 WORKDIR /src
-ADD main.go .
+ADD main.go go.mod .
 RUN go build -o helloserver -ldflags="-s -w"
 
 FROM alpine:edge
