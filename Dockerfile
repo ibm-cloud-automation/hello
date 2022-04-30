@@ -1,6 +1,6 @@
 FROM index.docker.io/library/golang:alpine as build
 WORKDIR /src
-ADD main.go go.mod .
+COPY main.go go.mod .
 RUN go build -o helloserver -ldflags="-s -w"
 
 FROM index.docker.io/library/alpine:edge
