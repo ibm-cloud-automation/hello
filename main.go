@@ -29,7 +29,7 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello from a rainy Utrecht")
+	fmt.Fprintf(w, "Hello from a stormy Utrecht")
 }
 
 func health(w http.ResponseWriter, r *http.Request) {
